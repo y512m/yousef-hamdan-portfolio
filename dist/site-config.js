@@ -1,0 +1,10 @@
+window.PORTFOLIO_CONFIG = {
+  contact: { email: "youssef57hamdan@gmail.com", github: "https://github.com/y512m", huggingFace: "https://huggingface.co/y512", linkedin: "https://www.linkedin.com/in/y5h/", resume: "" },
+  api: { baseUrl: "", status: "unavailable" },
+  ddh: { baseUrl: "http://127.0.0.1:8000", endpoint: "/analyze", model: "best11.pt", status: "local" },
+  projects: {
+    rag: { category: "Generative AI / Retrieval", title: "Banking Policy RAG Assistant", problem: "Policy documents are useful only when people can find and interpret the relevant guidance quickly.", approach: "A retrieval-augmented flow retrieves relevant policy passages, then grounds generation in the selected context.", architecture: "Document ingestion → embeddings → vector retrieval → LLM response → evaluation", stack: "Python, embeddings, vector database, LLM API, RAGAS", status: "Project details are ready for review before a public demo or repository is linked." },
+    media: { category: "Computer vision / Agents", title: "Multimodal Media Agentic Bot", problem: "Unstructured media makes downstream search, analysis, and response generation difficult.", approach: "A multi-agent workflow handles dynamic requests and returns structured API-friendly outputs, while a vision pipeline extracts features from media assets.", architecture: "Media ingestion → CV feature extraction → stateful agent workflow → structured JSON response", stack: "Python, OpenCV, YOLO, REST APIs", status: "Public release material requires review before links are added." },
+    disloc: { category: "Machine learning / XAI", title: "DislocPred", problem: "Medical-image prototypes need more than a prediction: they need interpretable evaluation around it.", approach: "YOLOv11 keypoint detection is paired with a geometric evaluation layer to explore explainable diagnostic assistance.", architecture: "Medical image → keypoint model → geometric evaluation → Gradio prototype", stack: "PyTorch, YOLOv11, Gradio, explainable AI", status: "Graduation-project prototype. Not presented as a clinical product." }
+  }
+};
